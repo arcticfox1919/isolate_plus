@@ -8,9 +8,7 @@ import 'dart:async';
 import 'dart:io';
 import 'dart:isolate';
 
-import 'package:isolate/isolate_runner.dart';
-import 'package:isolate/ports.dart';
-import 'package:isolate/runner.dart';
+import 'package:isolate_plus/isolate_plus.dart';
 
 Future<Future<Object?> Function()> runHttpServer(
     Runner runner, int port, HttpListener listener) async {

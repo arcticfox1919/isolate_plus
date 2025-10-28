@@ -1,11 +1,17 @@
-[![Dart CI](https://github.com/dart-lang/isolate/actions/workflows/test-package.yml/badge.svg)](https://github.com/dart-lang/isolate/actions/workflows/test-package.yml)
 
-# DISCONTINUED
+# isolate_plus
 
-This package has been discontinued, and will no longer be maintained.
+A modernized fork of the discontinued [dart-archive/isolate](https://github.com/dart-archive/isolate) package, updated to support Dart SDK 3.3.0 and above.
 
-------------
+## About This Fork
 
+The original `isolate` package was discontinued by the Dart team. This fork (`isolate_plus`) aims to:
+- ✅ Support modern Dart SDK versions (3.3.0+)
+- ✅ Maintain compatibility with the latest Dart language features
+- ✅ Fix compatibility issues with newer Dart SDK APIs (e.g., `RawReceivePort.keepIsolateAlive`)
+- ✅ Provide continued maintenance and updates
+
+## Overview
 
 Helps with isolates and isolate communication in Dart.
 Requires the `dart:isolate` library being available.
@@ -36,8 +42,30 @@ The "load_balancer.dart" sub-library can manage multiple `Runner` objects,
 including `IsolateRunner`, and run functions on the currently least loaded
 runner.
 
+## Migration from `isolate` package
+
+If you're migrating from the original `isolate` package, simply update your `pubspec.yaml`:
+
+```yaml
+dependencies:
+  isolate_plus: ^2.2.0  # Instead of isolate: ^2.1.1
+```
+
+And update your imports:
+
+```dart
+// Old
+import 'package:isolate/isolate.dart';
+
+// New
+import 'package:isolate_plus/isolate_plus.dart';
+```
+
+The API remains fully compatible with the original package.
+
 ## Features and bugs
 
 Please file feature requests and bugs at the [issue tracker][tracker].
 
-[tracker]: https://github.com/dart-lang/isolate/issues
+[tracker]: https://github.com/arcticfox1919/isolate_plus/issues
+

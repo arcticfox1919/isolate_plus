@@ -4,7 +4,7 @@
 
 /// A [Runner] runs a function, potentially in a different scope
 /// or even isolate.
-library isolate.runner;
+library isolate_plus;
 
 import 'dart:async' show FutureOr;
 

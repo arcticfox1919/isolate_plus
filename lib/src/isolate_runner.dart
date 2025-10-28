@@ -2,14 +2,14 @@
 // for details. All rights reserved. Use of this source code is governed by a
 // BSD-style license that can be found in the LICENSE file.
 
-library isolate.isolate_runner;
+library isolate_plus;
 
 import 'dart:async';
 import 'dart:isolate';
 
 import 'ports.dart';
 import 'runner.dart';
-import 'src/util.dart';
+import 'util.dart';
 
 // Command tags. Shared between IsolateRunner and IsolateRunnerRemote.
 const int _shutdown = 0;
@@ -287,7 +287,7 @@ class IsolateRunnerRemote {
 
   /// The command port that can be used to send commands to this remote.
   ///
-  /// Use this as argument to [new IsolateRunner] if creating the link
+  /// Use this as argument to [IsolateRunner] if creating the link
   /// manually, otherwise it's handled by [IsolateRunner.spawn].
   SendPort get commandPort => _commandPort.sendPort;
 

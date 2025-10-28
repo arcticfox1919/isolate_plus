@@ -4,7 +4,7 @@
 
 import 'dart:async';
 
-import 'package:isolate/isolate.dart';
+import 'package:isolate_plus/isolate_plus.dart';
 import 'package:test/test.dart';
 
 void main() {

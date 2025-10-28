@@ -4,8 +4,7 @@
 
 library isolate.example.runner_pool;
 
-import 'package:isolate/isolate_runner.dart';
-import 'package:isolate/load_balancer.dart';
+import 'package:isolate_plus/isolate_plus.dart';
 
 void main() {
   var N = 44;

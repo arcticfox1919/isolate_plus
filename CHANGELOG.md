@@ -1,3 +1,12 @@
+## 2.2.0
+
+* **Fork from discontinued dart-archive/isolate package**
+  - Updated to support Dart SDK 3.3.0 and above
+  - Implemented `keepIsolateAlive` property in `RawReceivePort` interface
+  - Fixed compatibility issues with modern Dart SDK
+  - Normalized package structure and naming
+  - Changed package name from `isolate` to `isolate_plus`
+
 ## 2.1.1
 
 * **DISCONTINUE PACKAGE**

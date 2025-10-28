@@ -3,13 +3,13 @@
 // BSD-style license that can be found in the LICENSE file.
 
 /// A load-balancing runner pool.
-library isolate.load_balancer;
+library isolate_plus;
 
 import 'dart:async' show Completer, FutureOr;
 
+import 'errors.dart';
 import 'runner.dart';
-import 'src/errors.dart';
-import 'src/util.dart';
+import 'util.dart';
 
 /// A pool of runners, ordered by load.
 ///

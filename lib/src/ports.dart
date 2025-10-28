@@ -17,12 +17,12 @@
 ///
 /// Other functions intercept the returned value and either
 /// does something with it, or puts it into a [Future] or [Completer].
-library isolate.ports;
+library isolate_plus;
 
 import 'dart:async';
 import 'dart:isolate';
 
-import 'src/util.dart';
+import 'util.dart';
 
 /// Create a [SendPort] that accepts only one message.
 ///

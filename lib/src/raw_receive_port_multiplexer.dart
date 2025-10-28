@@ -21,7 +21,7 @@
 ///
 /// (TODO: Check if it really is faster - creating a receive port requires a
 /// global mutex, so it may be a bottleneck, but it's not clear how slow it is).
-library isolate.raw_receive_port_multiplexer;
+library isolate_plus;
 
 import 'dart:collection';
 import 'dart:isolate';
@@ -47,6 +47,14 @@ class _MultiplexRawReceivePort implements RawReceivePort {
 
   @override
   SendPort get sendPort => _multiplexer._createSendPort(_id);
+
+  @override
+  bool get keepIsolateAlive => _multiplexer._port.keepIsolateAlive;
+
+  @override
+  set keepIsolateAlive(bool value) {
+    _multiplexer._port.keepIsolateAlive = value;
+  }
 
   void _invokeHandler(message) {
     _handler?.call(message);

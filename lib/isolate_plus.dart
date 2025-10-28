@@ -3,10 +3,10 @@
 // BSD-style license that can be found in the LICENSE file.
 
 /// Utilities for working with isolates and isolate communication.
-library isolate;
+library isolate_plus;
 
-export 'isolate_runner.dart';
-export 'load_balancer.dart';
-export 'ports.dart';
-export 'registry.dart';
-export 'runner.dart';
+export 'src/isolate_runner.dart';
+export 'src/load_balancer.dart';
+export 'src/ports.dart';
+export 'src/registry.dart';
+export 'src/runner.dart';
