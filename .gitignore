@@ -2,4 +2,4 @@
 .packages
 pubspec.lock
 .idea/
-.github/
+.vscode/

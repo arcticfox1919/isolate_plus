@@ -1,0 +1,3 @@
+# Files to exclude from package publication
+.github/
+.idea/
