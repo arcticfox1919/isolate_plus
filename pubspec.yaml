@@ -1,5 +1,5 @@
 name: isolate_plus
-version: 2.2.0
+version: 2.2.1
 description: >-
   A modernized fork of dart-archive/isolate. Utility functions and classes 
   related to the 'dart:isolate' library. Supports Dart SDK 3.3.0+.

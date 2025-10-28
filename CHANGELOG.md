@@ -1,3 +1,8 @@
+## 2.2.1
+
+* Documentation improvements
+  - Added Quick Start section with practical examples for `IsolateRunner` and `LoadBalancer`
+
 ## 2.2.0
 
 * **Fork from discontinued dart-archive/isolate package**
