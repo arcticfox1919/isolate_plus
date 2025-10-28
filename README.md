@@ -19,10 +19,18 @@ Isolates are not available for Dart on the web.
 
 The package contains individual libraries with different purposes.
 
-### Creating send ports and responding to messages.
+### Creating send ports and responding to messages
 
 The "ports.dart" sub-library contains functionality
 for creating `SendPort`s and reacting to values sent to those ports.
+
+Key utilities include:
+- **`singleCallbackPort`** / **`singleCallbackPortWithTimeout`** - Create a port that calls a callback once with the first message
+- **`singleCompletePort`** - Create a port that completes a `Completer` with the first message
+- **`singleResponseFuture`** / **`singleResponseFutureWithTimeout`** - Create a `Future` completed by a single port message
+- **`singleResultFuture`** - Handle future results sent across isolates
+- **`SingleResponseChannel`** - A reusable pattern for single-message request-response communication
+- **`sendFutureResult`** - Send a future's result (value or error) across isolates
 
 ### Working with isolates and running functions in other isolates.
 
